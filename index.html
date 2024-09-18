@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Finance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="header obj-width">
+        <nav>
+            <div class="logo">
+                <img src="/EXCESSTRADING/stockfinance.jpg" alt="">
+            </div>
+            <div class="menu">
+                <ul id="sidebar">
+                    <li onclick=hideSidebar()><span><img src="/EXCESSTRADING/close.png" alt=""></span</li>    
+                    <li><a href=""><img src="/EXCESSTRADING/market.png" alt="">Market</a></li>    
+                    <li><a href=""><img src="/EXCESSTRADING/feature.png" alt="">Features</a></li>    
+                    <li><a href=""><img src="/EXCESSTRADING/white paper.png" alt="">White Papers</a></li>    
+                    <li><a href=""><img src="/EXCESSTRADING/about us.png" alt="">About Us</a></li>    
+                </ul>
+                <ul id="menus">
+                    <li class="hideOnMobile"><a href="">Market</a></li>    
+                    <li class="hideOnMobile"><a href="">Features</a></li>    
+                    <li class="hideOnMobile"><a href="">White Papers</a></li>    
+                    <li class="hideOnMobile"><a href="">About Us</a></li>    
+                    <li onclick=showSidebar() class="menu-btn"><img src="/EXCESSTRADING/menu-bar.png" alt=""></li>    
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+
+    <div class="info obj-width">
+        <h1>BUY & <br> SELL <span>Crypto</span></h1>
+        <p>World's biggest cryptocurrency exchange available on web <br> as well as mobile phone.</p>
+        <a href="#" id="btn">Explore More</a>
+    </div>
+
+    <div class="coin-list obj-width">
+        <div class="coin">
+            <img src="/EXCESSTRADING/bitcoin.png" alt="">
+            <div>
+                <h3>$<span id="bitcoin"></span></h3>
+                <p>Bitcoin</p>
+            </div>
+        </div>
+
+        <div class="coin">
+            <img src="/EXCESSTRADING/etherium.png" alt="">
+            <div>
+                <h3>$<span id="ethereum"></span></h3>
+                <p>Ethereum</p>
+            </div>
+        </div>
+
+        <div class="coin">
+            <img src="/EXCESSTRADING/dogecoin.png" alt="">
+            <div>
+                <h3>$ <span id="dogecoin"></span></h3>
+                <p>Dogecoin</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    function showSidebar(){
+    const sidebar = document.querySelector('#sidebar')
+    sidebar.style.display = 'flex'
+}
+
+    function hideSidebar(){
+    const sidebar = document.querySelector('#sidebar')
+    sidebar.style.display = 'none'
+    }
+</script>
+</html>
